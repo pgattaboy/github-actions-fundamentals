@@ -1,0 +1,23 @@
+#1. Trigger (when to run)
+#2. Jobs (what big tasks to run)
+#3. Runner (where to run)
+#4. Steps (how to do the task)
+
+name: Workflow Name
+
+on:
+  trigger_event
+  #push:
+  #workflow_dispatch:
+
+jobs:
+  job_id:
+    name: Job Display Name
+    runs-on: runner_name
+
+    steps:
+      - name: Step Name
+        uses: some/action
+
+      - name: Another Step
+        run: shell command
